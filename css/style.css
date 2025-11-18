@@ -14,6 +14,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 .navbar {
@@ -90,10 +91,41 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #6B7F6E 0%, #9CAF88 100%);
+    position: relative;
     color: white;
-    padding: 100px 0;
     text-align: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 3;
 }
 
 .hero h1 {
@@ -112,7 +144,7 @@ body {
     justify-content: center;
 }
 .features {
-    padding: 80px 0;
+    padding: 40px 0;
     background: #E8E5D8;
 }
 
@@ -136,6 +168,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    height: 350px;
 }
 
 .feature-card:hover {
@@ -229,4 +262,13 @@ body {
     .hero-buttons {
         flex-direction: column;
     }
+}
+.bones{
+    background-image: url("./src/bones.png");
+}
+.heart{
+    background-image: url("./src/heart.png");
+}
+.brain{
+    background-image: url("./src/brain.png");
 }
