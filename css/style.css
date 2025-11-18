@@ -19,7 +19,6 @@ body {
 
 .navbar {
     background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -33,7 +32,7 @@ body {
 }
 
 .logo h2 {
-    color: white;
+    color: red;
     font-size: 1.5rem;
 }
 
@@ -52,7 +51,7 @@ body {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    color: #6B7F6E;
+    color: red;
 }
 
 .btn {
@@ -108,7 +107,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
     z-index: 2;
 }
 
@@ -166,12 +164,14 @@ body {
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
-    height: 350px;
+    
 }
 
 .feature-card:hover {
+    transform: translateY(-10px);
+}
+.doctor-card:hover{
     transform: translateY(-10px);
 }
 
@@ -183,6 +183,7 @@ body {
 .feature-card h3 {
     color: #6B7F6E;
     margin-bottom: 0.5rem;
+    font-size: 32px;
 }
 .footer {
     background: #6B7F6E;
@@ -220,7 +221,7 @@ body {
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
 .form-group textarea {
@@ -239,7 +240,6 @@ body {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     text-align: center;
     padding: 2rem;
 }
@@ -247,6 +247,7 @@ body {
 .doctor-card h3 {
     color: #6B7F6E;
     margin: 1rem 0 0.5rem;
+    
 }
 
 
@@ -263,12 +264,55 @@ body {
         flex-direction: column;
     }
 }
-.bones{
-    background-image: url("./src/bones.png");
+.hello{
+    height: 350px;
+
 }
-.heart{
-    background-image: url("./src/heart.png");
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
-.brain{
-    background-image: url("./src/brain.png");
+.doctor-img{
+    width: auto;
+    height: 100px;
+    border-radius: 12px;
+}
+.logo{
+    text-decoration: none;
+}
+
+.ser-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+    z-index: 1;
+}
+.ser-feature-card h3, .ser-feature-card p{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.ser-feature-card {
+    position: relative;
+    border-radius: 12px;
+    
+    min-height: 300px;
+}
+.ser-feature-card h3{
+    margin-top: 100px;
+    font-size: 40px;
+    color: blue;
+}
+.ser-feature-card p{
+    margin-top:auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ser-feature-card:hover {
+    transform: translateY(-10px);
 }
