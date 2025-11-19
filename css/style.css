@@ -169,10 +169,11 @@ body {
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
+    border: 2px solid #6B7F6E;
 }
 .doctor-card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 }
 
 .feature-icon {
@@ -315,4 +316,22 @@ img{
 }
 .ser-feature-card:hover {
     transform: translateY(-10px);
+}
+.abt-feature-card h3{
+    margin-top: 150px;
+    font-size: 40px;
+    color: #6B7F6E;
+
+}
+.ind-feature-card h3{
+    margin-top: 20px;
+}
+.ind-feature-card p{
+    margin-top: 100px;
+ }
+.service-feature-card h3{
+    margin-top: 30px;
+}
+.service-feature-card p{
+    margin-top: 30px;
 }
