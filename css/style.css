@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,9 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .container {
@@ -98,6 +102,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    flex: 1;
 }
 
 .hero::before {
@@ -144,6 +149,7 @@ body {
 .features {
     padding: 40px 0;
     background: #E8E5D8;
+    flex: 1;
 }
 
 .features h2 {
@@ -169,10 +175,13 @@ body {
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
+    border: 2px solid #6B7F6E;
 }
 .doctor-card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-20px);
+    border: 2px solid #6B7F6E;
+    transition: transform 0.3s;
 }
 
 .feature-icon {
@@ -181,7 +190,7 @@ body {
 }
 
 .feature-card h3 {
-    color: #6B7F6E;
+    color: #2c3e50;
     margin-bottom: 0.5rem;
     font-size: 32px;
 }
@@ -190,12 +199,13 @@ body {
     color: white;
     padding: 2rem 0;
     text-align: center;
+    margin-top: auto;
 }
 
 .page-header {
-    background: linear-gradient(135deg, #6B7F6E 0%, #9CAF88 100%);
-    color: white;
-    padding: 60px 0;
+    background: #E8E5D8;
+    color: #333;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -251,9 +261,13 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 840px){
     .nav-menu {
         display: none;
+    }
+    
+    .hero {
+        min-height: auto;
     }
     
     .hero h1 {
@@ -264,10 +278,9 @@ body {
         flex-direction: column;
     }
 }
-.hello{
-    height: 350px;
-
-}
+/* .hello{
+    min-height: auto;
+} */
 img{
     width: 100%;
     height: auto;
@@ -306,7 +319,7 @@ img{
 .ser-feature-card h3{
     margin-top: 100px;
     font-size: 40px;
-    color: blue;
+    color: #2c3e50;
 }
 .ser-feature-card p{
     margin-top:auto;
@@ -314,5 +327,25 @@ img{
     margin-right: 10px;
 }
 .ser-feature-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
+    border: 2px solid #6B7F6E;
+    transition: transform 0.3s;
+}
+.abt-feature-card h3{
+    margin-top: 150px;
+    font-size: 40px;
+    color: #2c3e50;
+
+}
+.ind-feature-card h3{
+    margin-top: 20px;
+}
+.ind-feature-card p{
+    margin-top: 100px;
+ }
+.service-feature-card h3{
+    margin-top: 30px;
+}
+.service-feature-card p{
+    margin-top: 30px;
 }
