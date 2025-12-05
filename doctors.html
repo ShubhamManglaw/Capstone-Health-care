@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Doctors - CarePoint Health</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="#" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="top_menu_bar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo"><a href="index.html" style="text-decoration: none;">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; font-weight: bold;">
                         <h2>🏥 CarePoint Health</h2>
-                    </a></div>
+                    </a>
+                    <button id="theme-toggle" class="btn-toggle" style="margin-left: 15px;">Dark Mode</button>
+                </div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -30,66 +33,63 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Meet Our Expert Doctors</h1>
-            <p>Experienced Medical Professionals Dedicated to Your Health</p>
+            <h1>Meet Our Specialists</h1>
+            <p>Experienced Doctors Dedicated to Your Health</p>
         </div>
     </section>
 
-    <section class="features">
+    <section class="services_section_main">
         <div class="container">
             <div class="doctor-grid">
                 <div class="doctor-card">
-                    <div class="feature-icon"><img class="doctor-img" src="./src/d1.jpeg" alt="👨‍⚕️"></div>
-                    <h3>Dr. Helen Brooke Taussig</h3>
-                    <p><strong>Cardiologist</strong></p>
-                    <p>MBBS, MD (Cardiology)</p>
-                    <p>15+ years experience</p>
+                    <img src="./src/d1.jpeg" alt="Doctor 1" class="doctor-img">
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p style="color: teal; font-weight: bold;">Cardiologist</p>
+                    <p>15+ years of experience in interventional cardiology.</p>
                 </div>
                 <div class="doctor-card">
-                    <div class="feature-icon"><img class="doctor-img" src="./src/d2.jpeg" alt="👨‍⚕️"></div>
-                    <h3>Dr. Charles Richard Drew</h3>
-                    <p><strong>Pediatrician</strong></p>
-                    <p>MBBS, MD (Pediatrics)</p>
-                    <p>12+ years experience</p>
+                    <img src="./src/d2.jpeg" alt="Doctor 2" class="doctor-img">
+                    <h3>Dr. Michael Chen</h3>
+                    <p style="color: teal; font-weight: bold;">Neurologist</p>
+                    <p>Expert in treating complex neurological disorders.</p>
                 </div>
                 <div class="doctor-card">
-                    <div class="feature-icon"><img class="doctor-img" src="./src/d3.jpeg" alt="👨‍⚕️"></div>
-                    <h3>Dr. Virginia Apgar</h3>
-                    <p><strong>Neurologist</strong></p>
-                    <p>MBBS, DM (Neurology)</p>
-                    <p>10+ years experience</p>
+                    <img src="./src/d3.jpeg" alt="Doctor 3" class="doctor-img">
+                    <h3>Dr. Emily Davis</h3>
+                    <p style="color: teal; font-weight: bold;">Pediatrician</p>
+                    <p>Dedicated to the health and well-being of children.</p>
                 </div>
                 <div class="doctor-card">
-                    <div class="feature-icon"><img class="doctor-img" src="./src/d4.jpeg" alt="👨‍⚕️"></div>
-                    <h3>Dr. Rajesh Sharma</h3>
-                    <p><strong>Gynecologist</strong></p>
-                    <p>MBBS, MS (OB/GYN)</p>
-                    <p>14+ years experience </p>
-                </div>
-                <div class="doctor-card">
-                    <div class="feature-icon"><img class="doctor-img" src="./src/d5.jpeg" alt="👨‍⚕️"></div>
-                    <h3>Dr. Vikram Singh</h3>
-                    <p><strong>Orthopedic Surgeon</strong></p>
-                    <p>MBBS, MS (Orthopedics)</p>
-                    <p>18+ years experience</p>
-                </div>
-                <div class="doctor-card">
-                    <div class="feature-icon"><img class="doctor-img" src="./src/d6.jpeg" alt="👨‍⚕️"></div>
-                    <h3>Dr. Amit Kumar</h3>
-                    <p><strong>General Physician</strong></p>
-                    <p>MBBS, MD (Medicine)</p>
-                    <p>11+ years experience</p>
+                    <img src="./src/d4.jpeg" alt="Doctor 4" class="doctor-img">
+                    <h3>Dr. James Wilson</h3>
+                    <p style="color: teal; font-weight: bold;">Orthopedic Surgeon</p>
+                    <p>Specializes in joint replacement and sports medicine.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="page_footer_end">
         <div class="container">
-            <p>&copy; 2024 CarePoint Health | Capstone Project by Shubham</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About CarePoint</h3>
+                    <p>Dedicated to providing world-class healthcare services with compassion and excellence. Your
+                        health is our priority.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Chandigarh Sector 21, Near Police Station</p>
+                    <p>📞 9999999999</p>
+                    <p>✉️ info@carepointhealth.com</p>
+                    <p>🕒 Mon - Sun: 24/7 Open</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CarePoint Health. All Rights Reserved | Capstone Project by Shubham</p>
+            </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

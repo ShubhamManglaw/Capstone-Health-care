@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - CarePoint Health</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="#" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="top_menu_bar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo"><a href="index.html" style="text-decoration: none;">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; font-weight: bold;">
                         <h2>🏥 CarePoint Health</h2>
-                    </a></div>
+                    </a>
+                    <button id="theme-toggle" class="btn-toggle" style="margin-left: 15px;">Dark Mode</button>
+                </div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
@@ -35,39 +38,59 @@
         </div>
     </section>
 
-    <section class="features">
+    <section class="services_section_main">
         <div class="container">
             <h2>Our Mission</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">To deliver exceptional healthcare
-                services that improve quality of life through compassionate care, medical expertise, and
-                state-of-the-art facilities.</p>
-
+                services with a patient-centric approach, ensuring the well-being of our community through advanced
+                medical practices and compassionate care.</p>
             <div class="features-grid">
-                <div class="ser-feature-card abt-feature-card">
+                <a href="#" class="ser-feature-card ind-feature-card" style="text-decoration: none;">
                     <img class="ser-background" src="./src/Patient-Centered.jpg">
-                    <h3>Patient-Centered</h3>
-                    <p>Your comfort and well-being are our top priorities</p>
-                </div>
-                <div class="ser-feature-card abt-feature-card">
+                    <div class="card-content">
+                        <h3>Compassion</h3>
+                        <p>We treat every patient with kindness and empathy.</p>
+                    </div>
+                </a>
+                <a href="#" class="ser-feature-card ind-feature-card" style="text-decoration: none;">
                     <img class="ser-background" src="./src/Quality-Care.png">
-                    <h3>Quality Care</h3>
-                    <p>Highest standards of medical excellence</p>
-                </div>
-                <div class="ser-feature-card abt-feature-card">
+                    <div class="card-content">
+                        <h3>Excellence</h3>
+                        <p>We strive for the highest standards in medical care.</p>
+                    </div>
+                </a>
+                <a href="#" class="ser-feature-card ind-feature-card" style="text-decoration: none;">
                     <img class="ser-background" src="./src/Trusted Partner.png">
-                    <h3>Trusted Partner</h3>
-                    <p>15,000+ satisfied patients trust us</p>
-                </div>
+                    <div class="card-content">
+                        <h3>Integrity</h3>
+                        <p>We act with honesty and transparency in all we do.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="page_footer_end">
         <div class="container">
-            <p>CarePoint Health | Capstone Project by Shubham</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About CarePoint</h3>
+                    <p>Dedicated to providing world-class healthcare services with compassion and excellence. Your
+                        health is our priority.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Chandigarh Sector 21, Near Police Station</p>
+                    <p>📞 9999999999</p>
+                    <p>✉️ info@carepointhealth.com</p>
+                    <p>🕒 Mon - Sun: 24/7 Open</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CarePoint Health. All Rights Reserved | Capstone Project by Shubham</p>
+            </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

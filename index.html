@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarePoint Health</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
+
 <body>
-    <nav class="navbar">
+    <nav class="top_menu_bar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo"><a href="index.html" style="text-decoration: none; font-weight: bold;"><h2>🏥 CarePoint Health</h2></a></div>
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; font-weight: bold;">
+                        <h2>🏥 CarePoint Health</h2>
+                    </a>
+                    <button id="theme-toggle" class="btn-toggle" style="margin-left: 15px;">Dark Mode</button>
+                </div>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -24,11 +31,11 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="banner_area">
         <video src="./src/video1.mp4" autoplay loop muted></video>
         <div class="container">
             <h1>Your Health, Our Priority</h1>
-            <p>Quality healthcare with compassion and expertise</p>
+            <p>Providing world-class healthcare with compassion and excellence.</p>
             <div class="hero-buttons">
                 <a href="contact.html" class="btn btn-primary btn-large">Schedule Appointment</a>
                 <a href="services.html" class="btn btn-secondary btn-large">Our Services</a>
@@ -36,37 +43,60 @@
         </div>
     </section>
 
-    <section class="features">
+    <section class="services_section_main">
         <div class="container">
             <h2>Discover Our Centres of Clinical Excellence</h2>
             <div class="features-grid hello">
                 <div class="ser-feature-card ind-feature-card">
                     <img class="ser-background" src="./src/heart.png">
-                    <h3>Cardiac Sciences</h3>
-                    <p>Apollo's Cardiac Sciences department is at the forefront of cardiac care in India and beyond, offering a comprehensive range of services from advanced diagnostics.</p>
-                    
+                    <div class="card-content">
+                        <h3>Cardiac Sciences</h3>
+                        <p>Apollo's Cardiac Sciences department is at the forefront of cardiac care in India and beyond,
+                            offering a comprehensive range of services from advanced diagnostics.</p>
+                    </div>
                 </div>
                 <div class="ser-feature-card ind-feature-card">
                     <img class="ser-background" src="./src/brain.png">
-                    <h3>Neurosciences</h3>
-                    <p>Apollo's Neurosciences department offers comprehensive care for conditions affecting the brain, spinal cord, and nerves. Our team of expert neurologists, neurosurgeons.</p>
-                    
+                    <div class="card-content">
+                        <h3>Neurosciences</h3>
+                        <p>Apollo's Neurosciences department offers comprehensive care for conditions affecting the
+                            brain, spinal cord, and nerves. Our team of expert neurologists, neurosurgeons.</p>
+                    </div>
                 </div>
                 <div class="ser-feature-card ind-feature-card">
                     <img class="ser-background" src="./src/bones.png">
-                    <h3>Orthopaedics</h3>
-                    <p>Apollo's Orthopedics department provides state-of-the-art care for a wide range of musculoskeletal conditions, from sports injuries and joint replacements to spinal disorders.</p>
-                    
+                    <div class="card-content">
+                        <h3>Orthopaedics</h3>
+                        <p>Apollo's Orthopedics department provides state-of-the-art care for a wide range of
+                            musculoskeletal conditions, from sports injuries and joint replacements to spinal disorders.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="page_footer_end">
         <div class="container">
-            <p>CarePoint Health | Capstone Project by Shubham</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About CarePoint</h3>
+                    <p>Dedicated to providing world-class healthcare services with compassion and excellence. Your
+                        health is our priority.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Chandigarh Sector 21, Near Police Station</p>
+                    <p>📞 9999999999</p>
+                    <p>✉️ info@carepointhealth.com</p>
+                    <p>🕒 Mon - Sun: 24/7 Open</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CarePoint Health. All Rights Reserved | Capstone Project by Shubham</p>
+            </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
+
 </html>

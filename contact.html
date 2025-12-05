@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - CarePoint Health</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="#" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="top_menu_bar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo"><a href="index.html" style="text-decoration: none;">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; font-weight: bold;">
                         <h2>🏥 CarePoint Health</h2>
-                    </a></div>
+                    </a>
+                    <button id="theme-toggle" class="btn-toggle" style="margin-left: 15px;">Dark Mode</button>
+                </div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -35,9 +38,9 @@
         </div>
     </section>
 
-    <section class="features">
+    <section class="services_section_main">
         <div class="container">
-            <div style="max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 12px;">
+            <div class="contact-form-container">
                 <h2 style="text-align: center; margin-bottom: 2rem;">Appointment Form</h2>
                 <form>
                     <div class="form-group">
@@ -60,7 +63,6 @@
                             <option value="neurology">Neurology</option>
                             <option value="orthopedics">Orthopedics</option>
                             <option value="pediatrics">Pediatrics</option>
-                            <option value="gynecology">Gynecology</option>
                             <option value="general">General Medicine</option>
                         </select>
                     </div>
@@ -69,40 +71,37 @@
                         <input type="date" id="date" name="date" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4"
                             placeholder="Describe your symptoms or reason for visit..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Book Appointment</button>
                 </form>
             </div>
-
-            <div style="margin-top: 3rem; text-align: center;">
-                <h2>Contact Information</h2>
-                <div class="features-grid" style="margin-top: 2rem;">
-                    <div class="feature-card">
-                        <h3>Address</h3>
-                        <p>123 Health Street<br>Medical District, City<br>State - 400001</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Phone</h3>
-                        <p>Emergency: +91 98765 43210<br>Appointments: +91 98765 43211<br>General: +91 98765 43212</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Hours</h3>
-                        <p>Mon-Sat: 8:00 AM - 8:00 PM<br>Sunday: 9:00 AM - 2:00 PM<br>Emergency: 24/7</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="page_footer_end">
         <div class="container">
-            <p>CarePoint Health | Capstone Project by Shubham</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About CarePoint</h3>
+                    <p>Dedicated to providing world-class healthcare services with compassion and excellence. Your
+                        health is our priority.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Chandigarh Sector 21, Near Police Station</p>
+                    <p>📞 9999999999</p>
+                    <p>✉️ info@carepointhealth.com</p>
+                    <p>🕒 Mon - Sun: 24/7 Open</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CarePoint Health. All Rights Reserved | Capstone Project by Shubham</p>
+            </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,46 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const contactForm = document.querySelector('form');
+    console.log("page loaded");
+
+    var contactForm = document.querySelector('form');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
+            console.log("form submitted");
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
 
-            if (name && email) {
-                alert(`Thank you, ${name}! Your appointment request has been received. We will contact you at ${email} shortly.`);
+            if (name != "" && email != "") {
+                alert("Thanks " + name + "! We will contact you soon.");
                 contactForm.reset();
             } else {
-                alert('Please fill in all required fields.');
+                alert("Please fill all fields");
             }
         });
+    }
+
+    var btn = document.getElementById('theme-toggle');
+    var body = document.body;
+
+    if (localStorage.getItem('theme') == 'dark') {
+        body.classList.add('dark-mode');
+        if (btn) {
+            btn.innerHTML = "Light Mode";
+        }
+    }
+
+    if (btn) {
+        btn.onclick = function () {
+            console.log("toggle clicked");
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                btn.innerHTML = "Light Mode";
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.innerHTML = "Dark Mode";
+                localStorage.setItem('theme', 'light');
+            }
+        };
     }
 });
